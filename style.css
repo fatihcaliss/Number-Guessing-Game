@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Concert+One&family=Kanit:wght@300&family=Oswald:wght@300&family=Patrick+Hand+SC&family=Satisfy&display=swap');
+
+body {
+  display: flex;
+  font-family: 'Concert One', cursive;
+  min-height: 100vh;
+  background: grey;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+    border: 10px solid black;
+    border-radius: 50px;
+    padding: 5%;
+    box-shadow: 0 0 20px 20px white;
+}
+
+#flip_letters {
+  position: relative;
+}
+
+#flip_letters span {
+  font-size: 10rem;
+  position: relative;
+  display: inline-block;
+  color: red;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--flip));
+  text-shadow: 5px 5px 5px;
+}
+
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+    color: aquamarine; 
+  }
+}
+
+.playground {
+    text-align: center;
+}
+p {
+    font-size: 3rem;
+    color: black;
+}
+#userInput {
+    min-width: 40%;
+    font-size: 2rem;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+button {
+    font-size: 2rem;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+#outputText {
+    color: brown;
+}
+button:hover {
+    font-size: 2.2rem;
+    background-color: aquamarine;
+}
+
