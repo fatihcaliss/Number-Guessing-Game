@@ -5,8 +5,8 @@ let letters = document.getElementById("flip_letters");
 
 let randomNumber = Math.floor(Math.random() * 51);
 
-let clap = new Audio("/clapsound.wav")
-let wrongsound = new Audio("/wrongsound.wav")
+let clap = new Audio("./clapsound.wav")
+let wrongsound = new Audio("./wrongsound.wav")
 
 function checkNumber() {
 
