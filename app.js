@@ -22,7 +22,7 @@ function checkNumber() {
       }  
 
     }
-    else if(input > randomNumber && input < 100){
+    else if(input > randomNumber && input < 50){
         output.innerHTML="You guessed too high";
         wrongsound.play();
     }
