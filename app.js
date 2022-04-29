@@ -3,7 +3,7 @@ let againButton = document.getElementById("againButton");
 let output = document.getElementById("outputText");
 let letters = document.getElementById("flip_letters");
 
-let randomNumber = Math.floor(Math.random() * 51);
+let randomNumber = Math.floor((Math.random() * 51) + 1);
 
 let clap = new Audio("sounds/clapsound.wav")
 let wrongsound = new Audio("sounds/wrongsound.wav")
@@ -31,7 +31,7 @@ function checkNumber() {
         wrongsound.play();
     }
     else if(input < 1){
-        output.innerHTML="Higher, it has to be between 1 and 100";
+        output.innerHTML="Higher, it has to be between 1 and 50";
         wrongsound.play();
     }
     else if(isNaN(input)){
